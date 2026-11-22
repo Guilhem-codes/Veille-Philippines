@@ -108,8 +108,8 @@ def collecter():
     return out
 
 PROMPT = """Tu aides à tenir une veille de sécurité Chine / Philippines (mer de Chine méridionale, détroit de Luçon, Batanes, sécurité intérieure à Mindanao/Sulu/BARMM).
-Pour chaque article, retiens-le seulement s'il décrit un ÉVÉNEMENT CONCRET et récent : incident en mer ou dans les airs, mouvement militaire notable, déclaration diplomatique marquante entre Manille et Pékin, attaque armée, embuscade, fusillade avec morts ou blessés, opération de sécurité contre des groupes armés, reddition de combattants.
-EXCLUS : saisies de drogue ou de contrebande, arrestations de routine, opérations anti-drogue sans fusillade meurtrière, faits divers sans lien avec la sécurité, opinions, analyses sans fait nouveau, rappels d'événements anciens, accidents sans lien avec les Philippines.
+Pour chaque article, retiens-le seulement s'il décrit un ÉVÉNEMENT CONCRET et récent : incident en mer ou dans les airs, mouvement militaire notable, déclaration diplomatique marquante entre Manille et Pékin, embuscade, attaque armée, homme abattu ou retrouvé mort après des tirs, personne blessée par balle, fusillade, opération de sécurité contre des groupes armés, reddition de combattants. À Mindanao, Sulu, Basilan, Maguindanao, Cotabato, Zamboanga et Davao, GARDE tout homicide ou toute attaque par arme à feu (cat "terrestre", impact 2 s'il y a un mort ou un blessé), même si l'auteur est inconnu ou s'il s'agit de criminalité locale.
+EXCLUS : saisies de drogue ou de contrebande, arrestations de routine sans tirs, opérations anti-drogue sans fusillade meurtrière, faits divers sans lien avec la sécurité, opinions, analyses sans fait nouveau, rappels d'événements anciens, accidents sans lien avec les Philippines.
 DOUBLONS : si plusieurs articles décrivent le même événement, ne produis qu'UN objet, et mets dans "autres" la liste des numéros des autres articles du même événement.
 DATES : "date" est la date de l'ÉVÉNEMENT, pas celle de la publication. Chaque article indique sa date de publication et son jour de la semaine : si l'article dit « samedi », « hier », « jeudi », calcule la date réelle à partir de cette publication. Si tu ne peux pas la déduire, mets null.
 COORDONNÉES : "lat" et "lng" seulement pour un lieu précis que tu connais avec certitude (ville, île, récif). Pour « Philippines », « Mindanao » ou une région vague, mets null. Jamais le centre du pays.
@@ -168,6 +168,7 @@ def main():
         a["lien_google"] = a["lien"]; a["lien"] = vrai_lien(a["lien"])
         if "news.google.com" in a["lien_google"]: time.sleep(0.5)
     arts = [a for a in cand if a["lien"] not in connus and a["lien"] not in vus]
+    print("décodeur de liens Google disponible :", bool(gnewsdecoder))
     print(len(arts), "articles nouveaux envoyés au modèle")
     ajoutes, echecs = 0, 0
     for k in range(0, min(len(arts), PAR_REQUETE * MAX_REQUETES), PAR_REQUETE):
@@ -179,6 +180,12 @@ def main():
             continue
         echecs = 0
         for a in lot: vus[a["lien"]] = aujourdhui.isoformat()
+        gardes = set()
+        for r in res:
+            try: gardes.add(int(r["n"])); gardes |= {int(x) for x in (r.get("autres") or [])}
+            except Exception: pass
+        for i, a in enumerate(lot):
+            print("  %s %s | %s" % ("RETENU " if (k + i) in gardes else "rejeté ", a["titre"][:100], a["media"]))
         for r in res:
             try: a = arts[int(r["n"])]
             except Exception: continue

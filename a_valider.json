@@ -1,4 +1,56 @@
 {
- "mise_a_jour": null,
- "propositions": []
+ "mise_a_jour": "2026-11-22",
+ "propositions": [
+  {
+   "date": "2026-11-22",
+   "date_incertaine": false,
+   "titre": "Deux suspects tués lors d'une opération anti-drogue à Sulu",
+   "cat": "terrestre",
+   "impact": 3,
+   "lieu": "Patikul, Sulu, Philippines",
+   "lat": 6.0464,
+   "lng": 121.1917,
+   "resume": "Deux suspects ont été abattus lors d'un échange de tirs avec des agents anti-drogue lors d'une opération d'achat-vente (buy-bust) à Patikul, dans la province de Sulu, samedi après-midi. Les individus tués ont été identifiés par des pseudonymes.",
+   "src": "B",
+   "info": "2",
+   "media": "Inquirer News",
+   "lien": "https://newsinfo.inquirer.net/2345288/2-suspected-drug-personalities-killed-in-sulu-buy-bust",
+   "ajoute_le": "2026-11-22",
+   "statut": "à vérifier"
+  },
+  {
+   "date": "2026-11-05",
+   "date_incertaine": false,
+   "titre": "Installation d'un radar de surveillance par les Marines américains et philippins à Palawan",
+   "cat": "militaire",
+   "impact": 2,
+   "lieu": "Aporawan, Palawan, Philippines",
+   "lat": 9.4167,
+   "lng": 118.4333,
+   "resume": "Les Marines américains et philippins ont installé un système de radar de surveillance côtière sur une plage d'Aporawan, à Palawan, le 5 novembre. Cette opération s'est déroulée dans le cadre d'un exercice de frappe maritime et de l'Archipelagic Coastal Defense Continuum pour renforcer la connaissance du domaine maritime.",
+   "src": "A",
+   "info": "2",
+   "media": "USNI News",
+   "lien": "https://news.usni.org/2026/11/20/u-s-philippine-marines-set-up-surveillance-radar-in-palawan",
+   "ajoute_le": "2026-11-22",
+   "statut": "à vérifier"
+  },
+  {
+   "date": "2026-11-20",
+   "date_incertaine": false,
+   "titre": "Discussion Marcos Jr. et Wang Yi pour apaiser les tensions",
+   "cat": "diplo",
+   "impact": 2,
+   "lieu": "Dîner de gala de l'APEC",
+   "lat": null,
+   "lng": null,
+   "resume": "Le président philippin Ferdinand Marcos Jr. s'est déclaré optimiste quant aux efforts visant à apaiser les tensions en mer de Chine occidentale. Cette déclaration fait suite à ses discussions avec le ministre chinois des Affaires étrangères Wang Yi lors du dîner de gala de l'APEC.",
+   "src": "C",
+   "info": "2",
+   "media": "Facebook",
+   "lien": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPU0xLQldIQWxmenhVSkJOWW1ONlNiWC0ySTFJQ1lkcnFIekVQc0oydVF5NUJiMDcxam1wcWpMajh0cGEydUZvdnZXMk15SE1WR3ZTUU9QSXVNaVRFaGlkRDF4UmJkWFg4WWl4LXlwZnc5N1FpZFYxTVRmNzhFWHBsZEpSQi02NThQZF9WWTBCS3pGNHdQOEs5dkN4UUo3NjhqVTh5TWtWbDBIam9WOE9sUzM2UTg3MGVxYlhYa0ctNDI2SUJrbHFtMzRmRDdxMHQwVldFaA?oc=5",
+   "ajoute_le": "2026-11-22",
+   "statut": "à vérifier"
+  }
+ ]
 }

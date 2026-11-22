@@ -14,7 +14,7 @@ JOURS = 3             # on regarde les articles des 3 derniers jours
 MAX_ARTICLES = 40     # plafond d'articles envoyés au modèle par exécution
 PAR_REQUETE = 10      # articles par requête au modèle
 MAX_REQUETES = 6      # plafond de requêtes au modèle par exécution (quota gratuit)
-MODELE = os.environ.get("GEMINI_MODEL", "gemini-flash-lite-latest")
+MODELES = [os.environ.get("GEMINI_MODEL", "gemini-flash-lite-latest"), "gemini-flash-latest"]
 CLE = os.environ.get("GEMINI_API_KEY", "")
 
 FLUX = [
@@ -35,11 +35,15 @@ FLUX += [gnews(q) for q in [
     "site:tribune.net.ph China Philippines", "site:tribune.net.ph Mindanao", "site:mb.com.ph China Philippines", "site:mb.com.ph Mindanao",
 ]]
 
-MOTS = re.compile(r"(west philippine sea|south china sea|scarborough|bajo de masinloc|second thomas|ayungin|sierra madre|pag-?asa|"
+MER = re.compile(r"(west philippine sea|south china sea|scarborough|bajo de masinloc|second thomas|ayungin|sierra madre|pag-?asa|"
     r"spratly|kalayaan|sabina|escoda|sandy cay|reed bank|batanes|luzon strait|china coast guard|chinese coast guard|"
-    r"chinese (vessel|ship|navy|warship|research)|pla navy|liaoning|shandong|"
-    r"basilan|sulu|jolo|maguindanao|cotabato|barmm|lamitan|zamboanga|abu sayyaf|dawlah|"
-    r"ambush|gunmen|shot dead|killed|manila.{0,20}beijing|beijing.{0,20}manila|dfa|tarriela|trinidad)", re.I)
+    r"chinese (vessel|ship|navy|warship|research)|pla navy|liaoning|shandong|manila.{0,20}beijing|beijing.{0,20}manila|tarriela|trinidad)", re.I)
+ZONE = re.compile(r"(basilan|sulu|jolo|maguindanao|cotabato|barmm|lamitan|zamboanga|abu sayyaf|dawlah|mindanao|bangsamoro)", re.I)
+INCIDENT = re.compile(r"(ambush|gunmen|gunman|shot dead|shooting|killed|slain|attack|clash|encounter|bomb|explosion|grenade|kidnap|"
+    r"soldier|troops|army|military|police|operation|manhunt|wounded|arrest)", re.I)
+class MOTS:
+    @staticmethod
+    def search(t): return bool(MER.search(t) or (ZONE.search(t) and INCIDENT.search(t)))
 
 def charger(chemin, defaut):
     try:
@@ -65,7 +69,7 @@ def collecter():
         except Exception as e: print("ECHEC flux (%s) : %s" % (str(e)[:80], u[:110])); continue
         if not f.entries: print("VIDE (0 article dans le flux) :", u[:110]); continue
         n = 0
-        for e in f.entries:
+        for rang, e in enumerate(f.entries):
             lien = e.get("link", "")
             if not lien or lien in vus: continue
             d = e.get("published_parsed") or e.get("updated_parsed")
@@ -73,10 +77,11 @@ def collecter():
             titre, resume = nettoyer(e.get("title")), nettoyer(e.get("summary"))[:600]
             if not MOTS.search(titre + " " + resume): continue
             vus.add(lien); n += 1
-            out.append(dict(titre=titre, resume=resume, lien=lien,
+            out.append(dict(rang=rang, titre=titre, resume=resume, lien=lien,
                             media=nettoyer(getattr(e, "source", {}).get("title", "")) or f.feed.get("title", ""),
                             publie=dt.datetime(*d[:6]).strftime("%Y-%m-%d") if d else ""))
         print("OK %3d retenus sur %3d lus : %s" % (n, len(f.entries), u[:110]))
+    out.sort(key=lambda a: a["rang"])
     return out
 
 PROMPT = """Tu aides à tenir une veille de sécurité Chine / Philippines (mer de Chine méridionale, détroit de Luçon, sécurité intérieure à Mindanao/Sulu/BARMM).
@@ -98,25 +103,27 @@ ARTICLES :
 
 def appeler(articles, debut):
     texte = PROMPT + "\n".join("[%d] %s | %s | publié %s\n%s" % (debut + i, a["titre"], a["media"], a["publie"], a["resume"]) for i, a in enumerate(articles))
-    url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % MODELE
     corps = json.dumps({"contents": [{"parts": [{"text": texte}]}],
                         "generationConfig": {"temperature": 0.1, "responseMimeType": "application/json"}}).encode()
-    for essai in range(3):
-        req = urllib.request.Request(url, corps, {"Content-Type": "application/json", "x-goog-api-key": CLE})
-        try:
-            with urllib.request.urlopen(req, timeout=90) as r:
-                rep = json.load(r)
-            t = rep["candidates"][0]["content"]["parts"][0]["text"]
-            return json.loads(re.sub(r"^```(?:json)?|```$", "", t.strip()).strip())
-        except urllib.error.HTTPError as e:
-            msg = e.read().decode(errors="ignore")[:300]
-            print("Erreur Gemini", e.code, msg)
-            if e.code == 429 and essai < 2: time.sleep(20 * (essai + 1)); continue
-            return None
-        except Exception as e:
-            print("Erreur", e)
-            if essai < 2: time.sleep(5); continue
-            return None
+    for modele in MODELES:
+        url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % modele
+        for essai in range(4):
+            req = urllib.request.Request(url, corps, {"Content-Type": "application/json", "x-goog-api-key": CLE})
+            try:
+                with urllib.request.urlopen(req, timeout=90) as r:
+                    rep = json.load(r)
+                t = rep["candidates"][0]["content"]["parts"][0]["text"]
+                return json.loads(re.sub(r"^```(?:json)?|```$", "", t.strip()).strip())
+            except urllib.error.HTTPError as e:
+                msg = e.read().decode(errors="ignore")[:200].replace("\n", " ")
+                print("Erreur Gemini %s (%s), essai %d : %s" % (e.code, modele, essai + 1, msg))
+                if e.code in (429, 500, 502, 503, 504) and essai < 3: time.sleep(30 * (essai + 1)); continue
+                break
+            except Exception as e:
+                print("Erreur (%s) :" % modele, e)
+                if essai < 3: time.sleep(10); continue
+                break
+    return None
 
 def main():
     if not CLE: sys.exit("GEMINI_API_KEY absente : vérifie le secret GitHub.")
@@ -127,10 +134,15 @@ def main():
     arts = [a for a in collecter() if a["lien"] not in connus][:MAX_ARTICLES]
     print(len(arts), "articles nouveaux envoyés au modèle")
     ajoutes = 0
+    echecs = 0
     for k in range(0, min(len(arts), PAR_REQUETE * MAX_REQUETES), PAR_REQUETE):
         lot = arts[k:k + PAR_REQUETE]
         res = appeler(lot, k)
-        if res is None: print("Arrêt : le modèle n'a pas répondu (quota ?)."); break
+        if res is None:
+            echecs += 1; print("Lot %d ignoré (le modèle n'a pas répondu)." % (k // PAR_REQUETE + 1))
+            if echecs >= 2: print("Arrêt après 2 échecs consécutifs."); break
+            continue
+        echecs = 0
         for r in res:
             try: a = arts[int(r["n"])]
             except Exception: continue

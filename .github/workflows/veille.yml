@@ -1,8 +1,11 @@
+
 name: Veille quotidienne
 on:
   schedule:
     - cron: "30 5 * * *"   # tous les jours à 05h30 UTC (06h30 ou 07h30 à Paris)
-  workflow_dispatch:        # permet aussi de la lancer à la main
+  workflow_dispatch:        # lancement à la main
+  push:
+    paths: ["a_valider.json"]   # se déclenche quand tu enregistres tes validations
 permissions:
   contents: write
 jobs:
@@ -14,14 +17,19 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install feedparser googlenewsdecoder
-      - run: python scripts/collect.py
+      - name: Appliquer tes validations
+        run: python scripts/valider.py
+      - name: Chercher de nouvelles informations
+        if: github.event_name != 'push'
+        run: python scripts/collect.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      - name: Enregistrer les propositions
+      - name: Enregistrer
         run: |
           git config user.name "veille-bot"
           git config user.email "veille-bot@users.noreply.github.com"
-          git add a_valider.json vus.json
-          git diff --staged --quiet || git commit -m "Propositions du $(date +%F)"
+          git add a_valider.json vus.json donnees.json
+          git diff --staged --quiet || git commit -m "Mise à jour du $(date +%F)"
           git pull --rebase
           git push
+ 

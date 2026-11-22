@@ -24,3 +24,5 @@ jobs:
           git add a_valider.json
           git diff --staged --quiet || git commit -m "Propositions du $(date +%F)"
           git push
+          git pull --rebase
+          git push

@@ -1,4 +1,24 @@
 {
- "mise_a_jour": null,
- "propositions": []
+ "mise_a_jour": "2026-11-22",
+ "propositions": [
+  {
+   "date": "2026-11-20",
+   "date_incertaine": false,
+   "titre": "Déclaration de Marcos Jr. sur le Code de conduite en mer de Chine",
+   "cat": "diplo",
+   "impact": 1,
+   "lieu": "Philippines",
+   "lat": null,
+   "lng": null,
+   "resume": "Le président philippin Ferdinand Marcos Jr. a déclaré vendredi qu'il avait la conviction que la Chine souhaite également finaliser rapidement le Code de conduite en mer de Chine méridionale, à l'instar de l'ensemble des États membres de l'ASEAN.",
+   "incomplet": false,
+   "src": "C",
+   "info": "2",
+   "media": "Facebook",
+   "lien": "https://www.facebook.com/gmanews/photos/president-ferdinand-bongbong-marcos-jr-on-friday-said-that-he-felt-strongly-that/1792759859562330/",
+   "autres_liens": [],
+   "ajoute_le": "2026-11-22",
+   "statut": "à vérifier"
+  }
+ ]
 }

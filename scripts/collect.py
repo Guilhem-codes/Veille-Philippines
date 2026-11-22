@@ -64,7 +64,7 @@ def vrai_lien(u):
     if gnewsdecoder and "news.google.com" in u:
         try:
             r = gnewsdecoder(u, interval=2)
-            if r.get("status") and r.get("decoded_url"): return r["decoded_url"]
+            if (r.get("status") or r.get("success")) and r.get("decoded_url"): return r["decoded_url"]
             print("  décodage refusé :", str(r.get("message", r))[:120])
         except Exception as e: print("décodage impossible :", str(e)[:80])
     return u

@@ -114,26 +114,6 @@
    "autres_liens": [],
    "ajoute_le": "2026-11-23",
    "statut": "à vérifier"
-  },
-  {
-   "date": "2026-11-22",
-   "date_incertaine": false,
-   "titre": "Affrontement armé entre clans à Lanao del Sur",
-   "cat": "terrestre",
-   "impact": 2,
-   "lieu": "Balabagan, Lanao del Sur",
-   "lat": 7.4247,
-   "lng": 124.1133,
-   "resume": "Une fusillade a éclaté à Balabagan, dans la province de Lanao del Sur, opposant deux clans rivaux Moro, les familles Sampiano et Karim. Cet affrontement lié à un différend clanique (rido) a fait un blessé, selon la police.",
-   "incomplet": false,
-   "src": "B",
-   "info": "2",
-   "media": "Inquirer News",
-   "lien": "https://newsinfo.inquirer.net/2345486/1-hurt-as-rido-erupts-in-lanao-del-sur",
-   "autres_liens": [],
-   "ajoute_le": "2026-11-23",
-   "statut": "valide"
-
   }
  ]
 }

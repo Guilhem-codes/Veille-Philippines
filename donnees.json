@@ -512,6 +512,22 @@
    "lat": 7.4247,
    "lng": 124.1133,
    "ex": ""
+  },
+  {
+   "id": "phcn-2026-033",
+   "ref": "PHCN-2026-033",
+   "title": "Collecteur de fonds tué à Marawi",
+   "date": "2026-11-23",
+   "cat": "terrestre",
+   "impact": 2,
+   "src": "C",
+   "info": "2",
+   "place": "Marawi",
+   "desc": "Un collecteur pour une société de crédit a été tué lors d'une fusillade à Marawi. Sa moto a également été emportée par les suspects.",
+   "source": "The Mindanao Sentinel : https://themindanaosentinel.com/2026/11/lending-company-collector-killed-in-marawi-shooting-motorcycle-reportedly-taken-by-suspects/",
+   "lat": 8,
+   "lng": 124.2833,
+   "ex": ""
   }
  ],
  "actualites": [
@@ -818,6 +834,14 @@
    "source": "Inquirer News",
    "title": "Affrontement armé entre clans à Lanao del Sur",
    "url": "https://newsinfo.inquirer.net/2345486/1-hurt-as-rido-erupts-in-lanao-del-sur"
+  },
+  {
+   "id": "n-themindanaos-20261123",
+   "date": "2026-11-23",
+   "note": "",
+   "source": "The Mindanao Sentinel",
+   "title": "Collecteur de fonds tué à Marawi",
+   "url": "https://themindanaosentinel.com/2026/11/lending-company-collector-killed-in-marawi-shooting-motorcycle-reportedly-taken-by-suspects/"
   }
  ]
 }

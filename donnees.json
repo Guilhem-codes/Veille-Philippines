@@ -528,6 +528,22 @@
    "lat": 8,
    "lng": 124.2833,
    "ex": ""
+  },
+  {
+   "id": "phcn-2026-034",
+   "ref": "PHCN-2026-034",
+   "title": "Un commandant de police abattu à Kidapawan",
+   "date": "2026-11-24",
+   "cat": "terrestre",
+   "impact": 2,
+   "src": "C",
+   "info": "2",
+   "place": "Kidapawan City",
+   "desc": "La police a lancé une chasse à l'homme pour retrouver des personnes d'intérêt après le meurtre d'un commandant de police, abattu par balle à l'intérieur d'une pension à Kidapawan City. Les forces de l'ordre de la région autonome de Bangsamoro et la famille ont condamné cet homicide.",
+   "source": "Facebook : https://www.facebook.com/pnagovph/posts/kidapawan-cops-hunt-suspects-in-police-majors-killing-by-edwin-fernandez-cotabat/1570727018437080/",
+   "lat": 7.0097,
+   "lng": 125.0889,
+   "ex": ""
   }
  ],
  "actualites": [
@@ -842,6 +858,22 @@
    "source": "The Mindanao Sentinel",
    "title": "Collecteur de fonds tué à Marawi",
    "url": "https://themindanaosentinel.com/2026/11/lending-company-collector-killed-in-marawi-shooting-motorcycle-reportedly-taken-by-suspects/"
+  },
+  {
+   "id": "n-facebook-20261124",
+   "date": "2026-11-24",
+   "note": "",
+   "source": "Facebook",
+   "title": "Un commandant de police abattu à Kidapawan",
+   "url": "https://www.facebook.com/pnagovph/posts/kidapawan-cops-hunt-suspects-in-police-majors-killing-by-edwin-fernandez-cotabat/1570727018437080/"
+  },
+  {
+   "id": "n-inquirernet-20261124",
+   "date": "2026-11-24",
+   "note": "",
+   "source": "Inquirer.net",
+   "title": "Un commandant de police abattu à Kidapawan",
+   "url": "https://newsinfo.inquirer.net/2346150/barmm-cops-family-condemn-killing-of-police-major-in-kidapawan"
   }
  ]
 }

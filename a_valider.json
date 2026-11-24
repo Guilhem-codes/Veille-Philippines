@@ -123,30 +123,6 @@
   {
    "date": "2026-11-24",
    "date_incertaine": false,
-   "titre": "Un commandant de police abattu à Kidapawan",
-   "cat": "terrestre",
-   "impact": 2,
-   "lieu": "Kidapawan City",
-   "lat": 7.0097,
-   "lng": 125.0889,
-   "resume": "La police a lancé une chasse à l'homme pour retrouver des personnes d'intérêt après le meurtre d'un commandant de police, abattu par balle à l'intérieur d'une pension à Kidapawan City. Les forces de l'ordre de la région autonome de Bangsamoro et la famille ont condamné cet homicide.",
-   "incomplet": false,
-   "src": "C",
-   "info": "2",
-   "media": "Facebook",
-   "lien": "https://www.facebook.com/pnagovph/posts/kidapawan-cops-hunt-suspects-in-police-majors-killing-by-edwin-fernandez-cotabat/1570727018437080/",
-   "autres_liens": [
-    {
-     "media": "Inquirer.net",
-     "lien": "https://newsinfo.inquirer.net/2346150/barmm-cops-family-condemn-killing-of-police-major-in-kidapawan"
-    }
-   ],
-   "ajoute_le": "2026-11-24",
-   "statut": "valide"
-  },
-  {
-   "date": "2026-11-24",
-   "date_incertaine": false,
    "titre": "Un couple blessé dans une embuscade à Sultan sa Barongis",
    "cat": "terrestre",
    "impact": 2,

@@ -544,6 +544,22 @@
    "lat": 7.0097,
    "lng": 125.0889,
    "ex": ""
+  },
+  {
+   "id": "phcn-2026-035",
+   "ref": "PHCN-2026-035",
+   "title": "Un couple blessé dans une embuscade à Sultan sa Barongis",
+   "date": "2026-11-24",
+   "cat": "terrestre",
+   "impact": 2,
+   "src": "C",
+   "info": "2",
+   "place": "Sultan sa Barongis",
+   "desc": "Un couple a été blessé lors d'une embuscade perpétrée par des hommes armés à moto dans la municipalité de Sultan sa Barongis.",
+   "source": "The Mindanao Sentinel : https://themindanaosentinel.com/2026/11/couple-wounded-in-motorcycle-riding-gunmens-ambush-in-sultan-sa-barongis/",
+   "lat": 6.7025,
+   "lng": 124.4503,
+   "ex": ""
   }
  ],
  "actualites": [
@@ -874,6 +890,14 @@
    "source": "Inquirer.net",
    "title": "Un commandant de police abattu à Kidapawan",
    "url": "https://newsinfo.inquirer.net/2346150/barmm-cops-family-condemn-killing-of-police-major-in-kidapawan"
+  },
+  {
+   "id": "n-themindanaos-20261124",
+   "date": "2026-11-24",
+   "note": "",
+   "source": "The Mindanao Sentinel",
+   "title": "Un couple blessé dans une embuscade à Sultan sa Barongis",
+   "url": "https://themindanaosentinel.com/2026/11/couple-wounded-in-motorcycle-riding-gunmens-ambush-in-sultan-sa-barongis/"
   }
  ]
 }

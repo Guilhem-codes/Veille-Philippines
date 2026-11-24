@@ -121,25 +121,6 @@
    "statut": "à vérifier"
   },
   {
-   "date": "2026-11-24",
-   "date_incertaine": false,
-   "titre": "Un couple blessé dans une embuscade à Sultan sa Barongis",
-   "cat": "terrestre",
-   "impact": 2,
-   "lieu": "Sultan sa Barongis",
-   "lat": 6.7025,
-   "lng": 124.4503,
-   "resume": "Un couple a été blessé lors d'une embuscade perpétrée par des hommes armés à moto dans la municipalité de Sultan sa Barongis.",
-   "incomplet": false,
-   "src": "C",
-   "info": "2",
-   "media": "The Mindanao Sentinel",
-   "lien": "https://themindanaosentinel.com/2026/11/couple-wounded-in-motorcycle-riding-gunmens-ambush-in-sultan-sa-barongis/",
-   "autres_liens": [],
-   "ajoute_le": "2026-11-24",
-   "statut": "valide"
-  },
-  {
    "date": "2026-11-23",
    "date_incertaine": false,
    "titre": "Prêt de défense de 2 milliards de dollars des États-Unis pour les Philippines",

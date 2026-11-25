@@ -199,30 +199,6 @@
   {
    "date": "2026-11-23",
    "date_incertaine": false,
-   "titre": "Un chef de police tué à Kidapawan City",
-   "cat": "terrestre",
-   "impact": 2,
-   "lieu": "Kidapawan City",
-   "lat": 7.0089,
-   "lng": 125.0894,
-   "resume": "Le major de police Razul Guiambangan Pandulo, chef de la police de Bubong, a été abattu à l'intérieur de sa pension située dans le lotissement Bolong à Kidapawan City. La police de la BARMM et sa famille ont condamné le meurtre et réclamé une enquête approfondie.",
-   "incomplet": false,
-   "src": "C",
-   "info": "2",
-   "media": "The Mindanao Sentinel",
-   "lien": "https://themindanaosentinel.com/2026/11/bubong-police-chief-killed-in-shooting-inside-boarding-house-in-kidapawan-city/",
-   "autres_liens": [
-    {
-     "media": "Inquirer News",
-     "lien": "https://newsinfo.inquirer.net/2346150/barmm-cops-family-condemn-killing-of-police-major-in-kidapawan"
-    }
-   ],
-   "ajoute_le": "2026-11-24",
-   "statut": "valide"
-  },
-  {
-   "date": "2026-11-23",
-   "date_incertaine": false,
    "titre": "Prêt de défense de 2 milliards de dollars des États-Unis pour les Philippines",
    "cat": "militaire",
    "impact": 1,
@@ -372,25 +348,6 @@
    ],
    "ajoute_le": "2026-11-25",
    "statut": "à vérifier"
-  },
-  {
-   "date": "2026-11-25",
-   "date_incertaine": false,
-   "titre": "Deux soldats blessés par balle à Crossing Simuay",
-   "cat": "terrestre",
-   "impact": 2,
-   "lieu": "Crossing Simuay",
-   "lat": 7.265,
-   "lng": 124.253,
-   "resume": "Deux soldats de l'armée ont été blessés lors d'une fusillade à Crossing Simuay. Les suspects ont été arrêtés à la suite d'une course-poursuite menée par les forces de sécurité.",
-   "incomplet": false,
-   "src": "C",
-   "info": "2",
-   "media": "The Mindanao Sentinel",
-   "lien": "https://themindanaosentinel.com/2026/11/two-army-soldiers-wounded-in-shooting-at-crossing-simuay-suspects-arrested-after-hot-pursuit/",
-   "autres_liens": [],
-   "ajoute_le": "2026-11-25",
-   "statut": "valide"
   },
   {
    "date": "2026-11-10",

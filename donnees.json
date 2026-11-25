@@ -576,6 +576,38 @@
    "lat": 20.4484,
    "lng": 121.97,
    "ex": ""
+  },
+  {
+   "id": "phcn-2026-037",
+   "ref": "PHCN-2026-037",
+   "title": "Un chef de police tué à Kidapawan City",
+   "date": "2026-11-23",
+   "cat": "terrestre",
+   "impact": 2,
+   "src": "C",
+   "info": "2",
+   "place": "Kidapawan City",
+   "desc": "Le major de police Razul Guiambangan Pandulo, chef de la police de Bubong, a été abattu à l'intérieur de sa pension située dans le lotissement Bolong à Kidapawan City. La police de la BARMM et sa famille ont condamné le meurtre et réclamé une enquête approfondie.",
+   "source": "The Mindanao Sentinel : https://themindanaosentinel.com/2026/11/bubong-police-chief-killed-in-shooting-inside-boarding-house-in-kidapawan-city/",
+   "lat": 7.0089,
+   "lng": 125.0894,
+   "ex": ""
+  },
+  {
+   "id": "phcn-2026-038",
+   "ref": "PHCN-2026-038",
+   "title": "Deux soldats blessés par balle à Crossing Simuay",
+   "date": "2026-11-25",
+   "cat": "terrestre",
+   "impact": 2,
+   "src": "C",
+   "info": "2",
+   "place": "Crossing Simuay",
+   "desc": "Deux soldats de l'armée ont été blessés lors d'une fusillade à Crossing Simuay. Les suspects ont été arrêtés à la suite d'une course-poursuite menée par les forces de sécurité.",
+   "source": "The Mindanao Sentinel : https://themindanaosentinel.com/2026/11/two-army-soldiers-wounded-in-shooting-at-crossing-simuay-suspects-arrested-after-hot-pursuit/",
+   "lat": 7.265,
+   "lng": 124.253,
+   "ex": ""
   }
  ],
  "actualites": [
@@ -922,6 +954,22 @@
    "source": "Table.Briefings",
    "title": "Tensions accrues de la Chine concernant les îles Batanes",
    "url": "https://table.media/en/security/news/claims-to-the-batanes-islands-china-turns-up-the-heat-on-the-philippines"
+  },
+  {
+   "id": "n-themindanaos-20261123",
+   "date": "2026-11-23",
+   "note": "",
+   "source": "The Mindanao Sentinel",
+   "title": "Un chef de police tué à Kidapawan City",
+   "url": "https://themindanaosentinel.com/2026/11/bubong-police-chief-killed-in-shooting-inside-boarding-house-in-kidapawan-city/"
+  },
+  {
+   "id": "n-themindanaos-20261125",
+   "date": "2026-11-25",
+   "note": "",
+   "source": "The Mindanao Sentinel",
+   "title": "Deux soldats blessés par balle à Crossing Simuay",
+   "url": "https://themindanaosentinel.com/2026/11/two-army-soldiers-wounded-in-shooting-at-crossing-simuay-suspects-arrested-after-hot-pursuit/"
   }
  ]
 }

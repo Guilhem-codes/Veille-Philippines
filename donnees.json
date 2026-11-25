@@ -608,6 +608,38 @@
    "lat": 7.265,
    "lng": 124.253,
    "ex": ""
+  },
+  {
+   "id": "phcn-2026-039",
+   "ref": "PHCN-2026-039",
+   "title": "Prêt de défense de 2 milliards de dollars des États-Unis pour les Philippines",
+   "date": "2026-11-23",
+   "cat": "militaire",
+   "impact": 2,
+   "src": "A",
+   "info": "2",
+   "place": "Manille",
+   "desc": "Les États-Unis se sont engagés à accorder un prêt de financement militaire étranger de 2 milliards de dollars pour la modernisation militaire de Manille et le développement d'un aéroport dans le détroit de Luçon. Cette aide a été conclue lors de la visite du président Donald Trump aux Philippines pour le sommet de l'ASEAN.",
+   "source": "USNI News : https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
+   "lat": 14.5995,
+   "lng": 120.9842,
+   "ex": ""
+  },
+  {
+   "id": "phcn-2026-040",
+   "ref": "PHCN-2026-040",
+   "title": "Chef de la police municipale abattu à Cotabato",
+   "date": "2026-11-23",
+   "cat": "terrestre",
+   "impact": 2,
+   "src": "C",
+   "info": "2",
+   "place": "Kidapawan, Cotabato",
+   "desc": "Un chef de la police municipale a été abattu par des assaillants non identifiés à Kidapawan, dans la province de Cotabato, lundi. Cet événement s'inscrit dans le cadre des violences armées suivies dans la région de Mindanao.",
+   "source": "Facebook : https://www.facebook.com/PhilippineSTAR/posts/nation-headlines-wednesday-november-25-2026-subscribe-to-the-paper-vice-mayor-ta/1710136447816894/",
+   "lat": 7.0097,
+   "lng": 125.0886,
+   "ex": ""
   }
  ],
  "actualites": [
@@ -970,6 +1002,30 @@
    "source": "The Mindanao Sentinel",
    "title": "Deux soldats blessés par balle à Crossing Simuay",
    "url": "https://themindanaosentinel.com/2026/11/two-army-soldiers-wounded-in-shooting-at-crossing-simuay-suspects-arrested-after-hot-pursuit/"
+  },
+  {
+   "id": "n-usninews-20261123",
+   "date": "2026-11-23",
+   "note": "",
+   "source": "USNI News",
+   "title": "Prêt de défense de 2 milliards de dollars des États-Unis pour les Philippines",
+   "url": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development"
+  },
+  {
+   "id": "n-facebook-20261123",
+   "date": "2026-11-23",
+   "note": "",
+   "source": "Facebook",
+   "title": "Chef de la police municipale abattu à Cotabato",
+   "url": "https://www.facebook.com/PhilippineSTAR/posts/nation-headlines-wednesday-november-25-2026-subscribe-to-the-paper-vice-mayor-ta/1710136447816894/"
+  },
+  {
+   "id": "n-philstarcomr-20261123",
+   "date": "2026-11-23",
+   "note": "",
+   "source": "philstar.com - RSS Nation",
+   "title": "Chef de la police municipale abattu à Cotabato",
+   "url": "https://www.philstar.com/nation/2026/11/25/2572365/town-cop-chief-shot-dead-cotabato"
   }
  ]
 }

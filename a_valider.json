@@ -123,25 +123,6 @@
   {
    "date": "2026-11-23",
    "date_incertaine": false,
-   "titre": "Prêt de défense de 2 milliards de dollars des États-Unis pour les Philippines",
-   "cat": "militaire",
-   "impact": 2,
-   "lieu": "Manille",
-   "lat": 14.5995,
-   "lng": 120.9842,
-   "resume": "Les États-Unis se sont engagés à accorder un prêt de financement militaire étranger de 2 milliards de dollars pour la modernisation militaire de Manille et le développement d'un aéroport dans le détroit de Luçon. Cette aide a été conclue lors de la visite du président Donald Trump aux Philippines pour le sommet de l'ASEAN.",
-   "incomplet": false,
-   "src": "A",
-   "info": "2",
-   "media": "USNI News",
-   "lien": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
-   "autres_liens": [],
-   "ajoute_le": "2026-11-24",
-   "statut": "valide"
-  },
-  {
-   "date": "2026-11-23",
-   "date_incertaine": false,
    "titre": "Agriculteur abattu à Sumisip, Basilan",
    "cat": "terrestre",
    "impact": 2,
@@ -300,30 +281,6 @@
    "autres_liens": [],
    "ajoute_le": "2026-11-25",
    "statut": "à vérifier"
-  },
-  {
-   "date": "2026-11-23",
-   "date_incertaine": false,
-   "titre": "Chef de la police municipale abattu à Cotabato",
-   "cat": "terrestre",
-   "impact": 2,
-   "lieu": "Kidapawan, Cotabato",
-   "lat": 7.0097,
-   "lng": 125.0886,
-   "resume": "Un chef de la police municipale a été abattu par des assaillants non identifiés à Kidapawan, dans la province de Cotabato, lundi. Cet événement s'inscrit dans le cadre des violences armées suivies dans la région de Mindanao.",
-   "incomplet": false,
-   "src": "C",
-   "info": "2",
-   "media": "Facebook",
-   "lien": "https://www.facebook.com/PhilippineSTAR/posts/nation-headlines-wednesday-november-25-2026-subscribe-to-the-paper-vice-mayor-ta/1710136447816894/",
-   "autres_liens": [
-    {
-     "media": "philstar.com - RSS Nation",
-     "lien": "https://www.philstar.com/nation/2026/11/25/2572365/town-cop-chief-shot-dead-cotabato"
-    }
-   ],
-   "ajoute_le": "2026-11-25",
-   "statut": "valide"
   },
   {
    "date": "2026-11-23",

@@ -1,5 +1,5 @@
 {
- "mise_a_jour": "2026-11-27",
+ "mise_a_jour": "2026-11-28",
  "propositions": [
   {
    "date": "2026-11-20",
@@ -804,6 +804,87 @@
    "lien": "https://www.inquirer.net/496768/more-chinese-vessels-spotted-in-west-ph-sea-after-asean-summit-afp/",
    "autres_liens": [],
    "ajoute_le": "2026-11-27",
+   "statut": "à vérifier"
+  },
+  {
+   "date": "2026-11-26",
+   "date_incertaine": false,
+   "titre": "Meurtre d'un agent forestier du BARMM à Maguindanao del Norte",
+   "cat": "terrestre",
+   "impact": 2,
+   "lieu": "Maguindanao del Norte",
+   "lat": null,
+   "lng": null,
+   "resume": "Un employé du ministère de l'Environnement, des Ressources naturelles et de l'Énergie du BARMM (MENRE-BARMM) a été abattu par un homme armé jeudi matin. La police locale est à la recherche du suspect.",
+   "incomplet": false,
+   "src": "B",
+   "info": "2",
+   "media": "Inquirer.net",
+   "lien": "https://newsinfo.inquirer.net/2347670/barmm-forest-ranger-killed-in-maguindanao-del-norte",
+   "autres_liens": [
+    {
+     "media": "Facebook",
+     "lien": "https://www.facebook.com/pnagovph/posts/police-hunt-for-killer-of-menre-barmm-employee-by-edwin-fernandezcotabato-city-p/1573681774808271/"
+    }
+   ],
+   "ajoute_le": "2026-11-28",
+   "statut": "à vérifier"
+  },
+  {
+   "date": "2026-11-26",
+   "date_incertaine": false,
+   "titre": "Avertissement du ministère chinois de la Défense au Japon",
+   "cat": "diplo",
+   "impact": 1,
+   "lieu": "Chine",
+   "lat": null,
+   "lng": null,
+   "resume": "Le ministère chinois de la Défense a exhorté le Japon à cesser d'envenimer les différends en mer de Chine méridionale. Cette déclaration intervient dans un contexte de tensions régionales accrues impliquant plusieurs acteurs asiatiques.",
+   "incomplet": false,
+   "src": "C",
+   "info": "2",
+   "media": "Bilyonaryo Business",
+   "lien": "https://bnc.bilyonaryo.com/chinas-defence-ministry-urges-japan-to-stop-stirring-up-south-china-sea-disputes/world/",
+   "autres_liens": [],
+   "ajoute_le": "2026-11-28",
+   "statut": "à vérifier"
+  },
+  {
+   "date": "2026-11-25",
+   "date_incertaine": false,
+   "titre": "Deux soldats tués dans une attaque à Maguindanao",
+   "cat": "terrestre",
+   "impact": 2,
+   "lieu": "Maguindanao",
+   "lat": null,
+   "lng": null,
+   "resume": "Deux soldats ont été tués lors d'une attaque armée survenue dans la province de Maguindanao. L'incident s'inscrit dans le cadre des violences liées à la sécurité intérieure dans cette région de Mindanao.",
+   "incomplet": false,
+   "src": "B",
+   "info": "2",
+   "media": "Philstar.com",
+   "lien": "https://www.philstar.com/nation/2026/11/26/2572668/2-soldiers-slain-maguindanao-attack/amp/",
+   "autres_liens": [],
+   "ajoute_le": "2026-11-28",
+   "statut": "à vérifier"
+  },
+  {
+   "date": "2026-11-28",
+   "date_incertaine": false,
+   "titre": "Trois blessés dans une explosion et des tirs à Maguindanao del Norte",
+   "cat": "terrestre",
+   "impact": 2,
+   "lieu": "Maguindanao del Norte",
+   "lat": null,
+   "lng": null,
+   "resume": "Trois personnes ont été blessées à la suite d'une tentative de règlement d'un conflit de clan (rido) à Maguindanao del Norte qui a dégénéré en explosion et en fusillade.",
+   "incomplet": false,
+   "src": "C",
+   "info": "2",
+   "media": "PhilNews",
+   "lien": "https://philnews.ph/2026/11/28/3-hurt-after-rido-settlement-in-maguindanao-del-norte-ends-in-explosion-gunfire/",
+   "autres_liens": [],
+   "ajoute_le": "2026-11-28",
    "statut": "à vérifier"
   }
  ]
